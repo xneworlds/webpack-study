@@ -20,7 +20,7 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: [[require("postcss-preset-env"), {}]],
+                plugins: ["postcss-preset-env"],
               },
             },
           },

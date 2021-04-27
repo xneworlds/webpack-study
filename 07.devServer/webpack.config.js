@@ -45,4 +45,6 @@ module.exports = {
     /** 自动打开浏览器 */
     open: true,
   },
+  /** 解决配置browserslist后devServer不自动刷新的问题 */
+  target: (process.env.NODE_ENV = "production" ? void 0 : "web"),
 };

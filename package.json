@@ -20,6 +20,7 @@
     "@babel/core": "^7.13.15",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.13.15",
+    "add-asset-html-webpack-plugin": "^3.2.0",
     "babel-loader": "^8.2.2",
     "core-js": "^3.10.1",
     "css-loader": "^5.2.1",
@@ -37,10 +38,12 @@
     "postcss-loader": "^5.2.0",
     "postcss-preset-env": "^6.7.0",
     "style-loader": "^2.0.0",
+    "thread-loader": "^3.0.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.31.2",
     "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "workbox-webpack-plugin": "^6.1.5"
   },
   "browserslist": {
     "development": [
@@ -53,5 +56,12 @@
       "not dead",
       "not op_mini all"
     ]
+  },
+  "sideEffects": [
+    "*.css",
+    "*.less"
+  ],
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

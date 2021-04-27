@@ -8,9 +8,11 @@ const commonCssLoader = [
   MiniCssExtractPlugin.loader,
   "css-loader",
   {
-    loader: "post-loader",
+    loader: "postcss-loader",
     options: {
-      postcssOptions: [[require("postcss-preset-env"), {}]],
+      postcssOptions: {
+        plugins: ["postcss-preset-env"],
+      },
     },
   },
 ];
